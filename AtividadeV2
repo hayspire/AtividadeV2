@@ -1,0 +1,36 @@
+class produto{
+    codigo: number;
+    nome: string;
+    
+}
+
+class cliente{
+    id: number;
+    nome: string;
+    
+    
+}
+
+class pedido{
+    cliente: cliente;
+    vtotal: number;
+    produtos: <produto>() => produto
+}
+
+let pessoa = new cliente();
+console.log(123, "Mila");
+
+let prod = new produto();
+console.log(22, "Papel");
+
+let prod2 = new produto();
+console.log(30, "Meia");
+
+
+
+function realizaP(produto, cliente){
+produto.push(prod);
+produto.push(prod2);
+produto.cliente(pessoa);
+console.log(produto + "-");
+}
